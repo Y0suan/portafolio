@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth
+    }
+
+.nav{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.nava{
+    width: 50%;
+    height: 100%;
+    font-size: 25px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    color: black;
+    transition: .2s;
+}
+a:hover{
+    color: #3A5BF3;
+}
+.logo{
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 400;
+}
+.sobreMi{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text1{
+    padding: 100px;
+    width: 50%;
+}
+.text1 h1{
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 80px;
+}
+.text1 p{
+    font-size: 20px;
+}
+.btn1{
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+    background-color: #3A5BF3;
+    width: 300px;
+    height: 59px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 16px 17px 33px 8px rgba(0, 0, 0, 0.155);
+}
+.astronauta{
+    animation-name: flo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: relative;
+    bottom: 0px;
+    left:30px;
+  
+  }
+  @keyframes flo{
+    50%{
+      transform: translateY(30px);
+    }
+  }
+  .planeta{
+    animation-name: flo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    z-index: -1;
+    /* background-color: aqua;
+    z-index: -1; */
+  }
+  .planeta img{
+    width: 250px;
+    z-index: -1;
+  }
+  @keyframes flo{
+    50%{
+      transform: translateY(20px);
+    }
+  }
+
+
+  .skills{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .carusel{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .cont1{
+
+  }
+  .cartSkills{
+   margin: 20px;
+   margin-left: 10px;
+   margin-right:10px ;
+    color: black;
+    min-width: 320px;
+    min-height: 180px;
+    border-radius: 15px;
+    box-shadow: 16px 17px 33px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 1.5s;
+    background-color: white;
+  }
+  .cartText{
+    flex-direction: column;
+  }
+  .titleSkills{
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .img{
+    width: 90px;
+    height: 100px;
+  }
+  .cartSkills:hover{
+    transform: scale(1.5);
+
+  }
+  .css{
+    height: 340px;
+  }
+  .js{
+    width: 80px;
+    height: 80px;
+  }
+
+  .astronauta2{
+    animation-name: flo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    left:30px;
+    bottom:-700px;
+    
+
+  }
+  @keyframes flo{
+    50%{
+      transform: translateY(30px);
+    }
+  }
+  
+  .coffe{
+    /* animation-name: flox; */
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    right:100px;
+    bottom:-100px;
+  }
+  .coffe img{
+    width: 100px;
+  }
+  @keyframes flox{
+    50%{
+      transform: translatex(30px);
+    }
+  }
+  .game{
+    animation-name: flox;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    left:250px;
+    bottom:-300px;
+  }
+  .game img{
+    width: 100px;
+  }
+
+  .redes{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 20vh;
+    width: 100%;
+  }
+  .redes ul{
+    position: relative;
+    display: flex;
+  
+  }
+  .redes ul li{
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    /* background: #fff; */
+    border-radius: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+    transition: 0.5s;
+  }
+  .redes ul li:hover{
+    width: 180px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1)
+  }
+  .redes ul li::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    background: linear-gradient(45deg ,var(--i),var(--j));
+    opacity: 0;
+    transition: 0.5s;
+}
+.redes ul li:hover::before{
+    opacity: 1;
+}
+.redes ul li::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius:60px ;
+    background: linear-gradient(45deg,var(--i),var(--j));
+    transition: 0.5s;
+    filter: blur(15px);
+    z-index: -1;
+    opacity: 0;
+}
+.redes ul li:hover::after{
+    opacity: 0.5;
+}
+
+.redes ul li .uil{
+    color: #777;
+    font-size: 1.75em;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
+.redes ul li:hover .uil{
+    color: rgba(255, 255, 255, 0);
+    transition-delay: 0s;
+}
+.redes ul li span{
+    position: absolute;
+}
+.redes ul li .title{
+    color: #fff;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+.redes ul li:hover .title{
+    transform: scale(1);
+}
+.titleRedes{
+    width: 300px;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 80px;
+}
+.hobbies{
+  background-color:#3A5BF3;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.infoHcont{
+  width: 100%;
+}
+.hobieInfo{
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.cartHobbie{
+  border-radius: 15px;
+  width: 320px ;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  transition: 1s;
+}
+.cartHobbie:hover{
+  transform: translatey(-20px);
+}
+.glass{
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.cartHobbie img{
+  width: 120px;
+  height: 120px;
+}
+.cartHobbie p{
+font-size: 30px;
+font-weight: 600;
+}
+.titleH{
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.contRP{
+  /* border: solid 3px rgba(0, 0, 0, 0.413); */
+  border-radius: 50%;
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 30px;
+  z-index: -1;
+}
+.planetRotate{
+  /* border: solid 3px rgba(0, 0, 0, 0.607); */
+  position: absolute;
+  border-radius: 50%;
+  width: 700px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: rot;
+  animation-duration: 70s;
+  animation-iteration-count: infinite;
+}
+.planetRotate img{
+  position: absolute;
+  width: 500px;
+  height: 500px;
+}
+@keyframes rot{
+  50%{
+    transform: rotate(360deg);
+  }
+}
+.planetHobbie{
+  animation-name: flo;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  position: absolute;
+  left: 10px;
+}
+.proyectos{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.proyectos h3{
+  margin: 50px;
+  width: 100%;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 80px;
+}
+.cartProyect{
+display: flex;
+width: 100%;
+height:70%;
+justify-content: space-around;
+}
+.contcarts{
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.cartProyect img{
+width: 200px;
+height: 400px;
+margin-left: 50px;
+}
+.proyectosCart{
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  background-image: url(./assets/proyect/content-pixie-9bBeqpUmIkg-unsplash.jpg);
+  background-size: cover;
+  width: 320px;
+  height: 200px;
+}
+.proyectModal{
+  background-color: rgba(0, 0, 0, 0.221);
+  color: white;
+  position: absolute;
+    width: 100%;
+    height: 200%;
+     bottom: 0%; 
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem 1.25rem; 
+    transition: 0.5s;
+}
+.proyectModal:hover{
+bottom: -100%;
+}
+.proyectModal h4{
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.proyectModal a{
+  margin-left: 10px;
+  font-size: 20px;
+  padding: 16px;
+  color: white;
+  border-radius: 10px;
+  background-color: #3A5BF3;
+} 
+.shadow{
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+@media (max-width: 375px) {
+
+  .nav{
+   
+   }
+   .nava{
+    display: none;
+   }
+   .logo{
+   font-size: 20px;
+   }
+   .sobreMi{
+    height: 100vh;
+    align-items: flex-start;
+  }
+  .text1{
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .text1 h1{
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60px;
+  }
+  .text1 p{
+    font-size: 15px;
+  }
+  .btn1{
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 15px;
+    width: 200px;
+    height: 40px;
+   }
+   .astronauta{
+    z-index: -1;
+    position: absolute;
+    top: 350px;
+    left:250px;
+   }
+   .astronauta img{
+    width: 100px;
+   }
+   .planeta{
+    display: none;
+    position: absolute;
+    z-index: -1;
+    left: 10px;
+    top: 150px;
+   }
+   .planeta img{
+    width: 100px;
+   }
+   .skills{
+    height: auto;
+   }
+   .astronauta2{
+    z-index: -1;
+   }
+   .coffe{
+    top: 150px;
+    left: 10px;
+   }
+   .coffe img{
+    width: 70px;
+   }
+   .titleRedes{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60px;
+   }
+   .hobbies{
+    margin-top: 40px;
+   }
+    .hobieInfo{
+      width: 100% ;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .cartHobbie{
+      margin: 10px;
+    }
+    .titleH{
+      margin: 20px;
+      text-align: center;
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 60px;
+    }
+    .cartProyect img{
+      display: none;
+    }
+    .contcarts{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .proyectosCart{
+      margin: 10px;
+    }
+    .proyectos h3{
+      margin: 70px 20px 10px 20px ;
+      text-align: center;
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 60px;
+    }
+}
